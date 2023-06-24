@@ -27,7 +27,7 @@ class DiscordUsernameChecker:
     
     @staticmethod
     def generate_random_username(length):
-        chars = string.ascii_lowercase + string.digits
+        chars = string.ascii_lowercase + string.digits + string.ascii_uppercase + "._"
         return ''.join(random.choice(chars) for _ in range(length))
 
 def clear_screen():
